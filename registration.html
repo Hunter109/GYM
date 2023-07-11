@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Gymnasium Management System</title>
+
+    <!-- link section  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/style/try.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
+
+
+</head>
+
+<body>
+
+
+
+
+
+    <header>
+        <div class="header-info">
+            <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Bharatpur-11, U-TEC Chowk , Chitwan</span>
+            </div>
+            <div class="phone">
+                <i class="fas fa-phone"></i>
+                <span> <a href="tel:+977-9865252767">9869896545 </a></span>
+            </div>
+            <div class="opening-hours">
+                <i class="fas fa-clock bx-x"></i>
+                <span>Sun-Fri: 5:00 AM - 9:00 PM</span>
+            </div>
+        </div>
+    </header>
+
+
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <img src="./assets/image/logo.png" alt="Gymnasium Management System" srcset="">
+            </div>
+            <ul class="links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./membership.html">Membership</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+
+            </ul>
+            <a href="./login.html" class="action-btn">Login</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars "></i>
+            </div>
+        </div>
+
+        <!-- media query dropdown -->
+        <div class="dropdown_menu ">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./membership.html">Membership</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+
+            <a href="./login.html" class="action-btn">Login</a>
+        </div>
+        <!-- end media query dropdown -->
+    </nav>
+
+
+
+
+
+
+    <div class="registration-container ">
+        <div class=" flex justify-center items-start p-10 bg-gray-300 md:h-screen ">
+            <div class=" w-full max-w-3xl  bg-white p-8 rounded-md shadow-md">
+                <div class="text-2xl font-semibold mb-4">Registration</div>
+                <div class="content">
+                    <form action="#">
+                        <div class="user-details flex flex-wrap justify-between mb-4  ">
+                            <div class="input-box  mb-3 w-full md:w-1/2">
+                                <span class="font-semibold">Full Name</span>
+                                <input type="text" placeholder="Enter your name" required
+                                    class="h-10 w-full border-2 rounded px-2 ">
+                            </div>
+                            <div class="input-box mb-3 w-full md:w-1/2">
+                                <span class="font-semibold">Age</span>
+                                <input type="text" placeholder="Enter your age" required
+                                    class="h-10 w-full border-2 rounded px-2 ">
+                            </div>
+                            <div class="input-box mb-3 w-full md:w-1/2">
+                                <span class="font-semibold">Phone Number</span>
+                                <input type="text" placeholder="Enter your phone number" required
+                                    class="h-10 w-full border-2 rounded px-2 ">
+                            </div>
+                            <div class="input-box mb-3 w-full md:w-1/2">
+                                <span class="font-semibold">Address</span>
+                                <input type="text" placeholder="Enter your address" required
+                                    class="h-10 w-full border-2 rounded px-2 ">
+                            </div>
+                            <div class="input-box mb-3 w-full md:w-1/2">
+                                <span class="font-semibold">Email</span>
+                                <input type="text" placeholder="Enter your email" required
+                                    class="h-10 w-full border-2 rounded px-2 ">
+                            </div>
+                            <div class="input-box mb-3 w-full md:w-1/2">
+                                <span class="font-semibold">Membership Plan</span>
+                                <select class="h-10 w-full border-2 rounded px-2 " required>
+                                    <option value="" disabled selected>Select your membership plan</option>
+                                    <option value="Platinium">Platinium</option>
+                                    <option value="Golden">Golden</option>
+                                    <option value="Silver">Silver</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <div class="gender-details flex items-center  mb-4">
+                            <span class="font-semibold mr-2">Gender</span>
+                            <div class="category flex " required>
+                                <label for="male" class="flex items-center cursor-pointer mr-4">
+                                    <input type="radio" name="gender" id="male" class="mr-1">
+                                    <span class="gender">Male</span>
+                                </label>
+                                <label for="female" class="flex items-center cursor-pointer mr-4">
+                                    <input type="radio" name="gender" id="female" class="mr-1">
+                                    <span class="gender">Female</span>
+                                </label>
+
+                            </div>
+                        </div>
+                        <div class="button">
+                            <input type="submit" value="Register"
+                                class="h-10 w-full rounded text-black text-lg font-semibold bg-gray-100 hover:bg-black hover:text-white cursor-pointer  ">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!--  footer -->
+	<!--  footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col">
+					<h4>Our Location</h4>
+					<ul>
+						<li><iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.8429658921636!2d84.44191491506172!3d27.691247982798586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3994e4c950356f59%3A0x9f16980dc6bd57b4!2sUnited%20Technical%20College!5e0!3m2!1sen!2snp!4v1626505314807!5m2!1sen!2snp"
+								width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+						</li>
+
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Contact-us</h4>
+					<ul>
+						<li><a href="tel: +977 9869896545 , 9826235532"><b> <u> Phone Number</b></u>:+977
+								9869896545 ,9826235532</a></li>
+						<li><a href="mailto: utsavwagle123456789@gmail.com"><b><u>Email:</u></b>
+								utsavwagle19@gmail.com </a></li>
+						<li><a href="mailto:  utsavwagle508@gmail.com"><b><u>Email:</u></b>
+								utsavwagle508@gmail.com</a></li>
+
+					</ul>
+				</div>
+
+				<div class="footer-col">
+					<h4>Quick Links</h4>
+					<ul>
+						<li><a href="./index.html">Home</a></li>
+						<li><a href="./about.html">About Us</a></li>
+						<li><a href="./membership.html"> Membership</a></li>
+						<li><a href="./contact.html">Contact Us</a></li>
+						<li><a href="./login.html">login in</a></li>
+
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>follow us</h4>
+					<div class="social-links">
+						<a href="https://www.facebook.com/4nonymous.Hunter.109" target="_blank" id="facebook"><i
+								class="fab fa-facebook-f"></i></a>
+						<a href="https://www.instagram.com/utsav_wagle/" target="_blank" id="instagram"><i
+								class="fab fa-instagram"></i></a>
+						<a href="https://www.linkedin.com/in/utsav-wagle-a4847a270/" target="_blank" id="linkedin"><i
+								class="fab fa-linkedin"></i></a>
+
+						<a href="https://github.com/Hunter109" target="_blank" id="github"><i
+								class=" fab fa-github"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-text">
+			copyright&copy; all rights reserved, designed by <a href="https://github.com/Hunter109" target="_blank">
+				4NONYMOUSHUNTER</a>
+		</div>
+
+	</footer>
+	<script src="./assets/javascript/navbar.js"></script>
+
+
+
+
+</body>
+
+</html>
